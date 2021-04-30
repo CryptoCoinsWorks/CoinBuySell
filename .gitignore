@@ -273,6 +273,12 @@ FakesAssemblies/
 
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
+_site
+.sass-cache
+.jekyll-metadata
+yarn.lock
+Gemfile.lock
+package-lock.json
 node_modules/
 
 # Visual Studio 6 build log
@@ -348,3 +354,68 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+
+### Add some personally
+_site
+.sass-cache
+.jekyll-metadata
+yarn.lock
+Gemfile.lock
+package-lock.json
+node_modules/
+
+### macOS ###
+._.DS_Store
+*.DS_Store
+**/.DS_Store
+**/._.DS_Store
+.AppleDouble
+.LSOverride
+.DS_Store
+
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Excute files
+*.dll
+*.exe
+*.o
+*.so
+*.com
+*.class
+
+# Compress files
+*.dmg
+*.iso
+*.tar
+*.zip
+*.gz
+
+# VSCode
+/.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

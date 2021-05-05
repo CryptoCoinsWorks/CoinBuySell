@@ -3,12 +3,11 @@
 
 block_cipher = None
 
-added_files = [ ('Coinalarm.ui', '.')]
 
-a = Analysis(['RSI_alarm_test.py'],
+a = Analysis(['onefile', 'RSI_alarm_test.spec'],
              pathex=['C:\\Users\\esaw2\\WorkSpace\\Project\\CoinBuySell'],
              binaries=[],
-             datas=added_files,
+             datas=[],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -21,15 +20,19 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          a.binaries,
-          a.zipfiles,
-          a.datas,
           [],
-          name='RSI_alarm_test',
+          exclude_binaries=True,
+          name='onefile',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          upx_exclude=[],
-          runtime_tmpdir=None,
           console=False )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               upx_exclude=[],
+               name='onefile')

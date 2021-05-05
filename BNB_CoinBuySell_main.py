@@ -39,7 +39,7 @@ while True:
 
 
     ## telegram bot set
-    bot = telegram.Bot(token='your telegram token')
+    bot = telegram.Bot(token='1659512846:AAEtRJ-drNZYGWi6-BTonhuZ0LPcBrAqPyU')
     telegram_id = bot.getUpdates()[-1].message.chat.id
     
 

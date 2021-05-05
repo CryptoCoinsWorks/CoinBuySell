@@ -1,0 +1,7 @@
+pyqt5
+
+binance.client
+
+telegram
+
+python3

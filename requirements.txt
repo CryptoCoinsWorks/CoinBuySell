@@ -5,3 +5,5 @@ binance.client
 telegram
 
 python3
+
+pyqt5
